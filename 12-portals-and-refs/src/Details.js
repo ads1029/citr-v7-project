@@ -26,10 +26,10 @@ class Details extends Component {
       this.state;
 
     return (
-      <div className="details">
+      <div className="details m-10">
         <Carousel images={images} />
-        <div>
-          <h1>{name}</h1>
+        <div className="mx-20 my-10 flex flex-col items-center">
+          <h1 className="text-xl">{name}</h1>
           <h2>{`${animal} — ${breed} — ${city}, ${state}`}</h2>
           <ThemeContext.Consumer>
             {([theme]) => (

@@ -19,7 +19,7 @@ class Carousel extends Component {
     const { active } = this.state;
     const { images } = this.props;
     return (
-      <div className="carousel flex flex-row items-start">
+      <div className="carousel flex flex-row justify-center">
         <img
           src={images[active]}
           alt="animal"
@@ -33,8 +33,8 @@ class Carousel extends Component {
               src={photo}
               className={
                 index === active
-                  ? "active rounded-full w-24 h-24"
-                  : "rounded-full  w-24 h-24"
+                  ? "active rounded-full w-24 h-24 border-2 border-violet-500"
+                  : "rounded-full  w-24 h-24 opacity-70"
               }
               alt="animal thumbnail"
               onClick={this.handleIndexClick}
